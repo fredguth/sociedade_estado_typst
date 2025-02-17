@@ -1,17 +1,17 @@
-# The `my-package` Package
+# The `sociedade_estado_typst` Package
 <div align="center">Version 0.1.0</div>
 
-A short description about the project and/or client.
+Estilo de artigo para a revista Sociedade & Estado.
 
 ## Template adaptation checklist
 
 - [ ] Fill out `README.md`
-  - Change the `my-package` package name, including code snippets
+  √ Change the `my-package` package name, including code snippets
   - Check section contents and/or delete sections that don't apply
-- [ ] Check and/or replace `LICENSE` by something that suits your needs
-- [ ] Fill out `typst.toml`
+- [X] Check and/or replace `LICENSE` by something that suits your needs
+- [X] Fill out `typst.toml`
   - See also the [typst/packages README](https://github.com/typst/packages/?tab=readme-ov-file#package-format)
-- [ ] Adapt Repository URLs in `CHANGELOG.md`
+- [X] Adapt Repository URLs in `CHANGELOG.md`
   - Consider only committing that file with your first release, or removing the "Initial Release" part in the beginning
 - [ ] Adapt or deactivate the release workflow in `.github/workflows/release.yml`
   - to deactivate it, delete that file or remove/comment out lines 2-4 (`on:` and following)
@@ -30,10 +30,43 @@ A short description about the project and/or client.
 These instructions will get you a copy of the project up and running on the typst web app. Perhaps a short code example on importing the package and a very simple teaser usage.
 
 ```typ
-#import "@preview/my-package:0.1.0": *
+#import "@preview/sociedade_estado_typst:0.1.0"
 
-#show: my-show-rule.with()
-#my-func()
+#show: sociedade_estado.template.with(
+  title: [Seu título aqui],
+  authors: (
+    (
+      name: "Nome do Autor",
+      department: "Departamento do Autor",
+      institution: "Instituição do Autor",
+      city: "Cidade",
+      country: "País",
+      mail: "",
+    ),
+    (
+      name: "Nome do Autor",
+      department: "Departamento do Autor",
+      institution: "Instituição do Autor",
+      city: "Cidade",
+      country: "País",
+      mail: "",
+    ), 
+  ),
+  date: (
+    year: 2022,
+    month: "Maio",
+    day: 17,
+  ),
+  keywords: (
+    "Palavra-chave 1",
+    "Palavra-chave 2",
+    "Palavra-chave 3",
+  ),
+  doi: "10:7891/120948510",
+  abstract: [
+    Resumno do artigo.
+  ]
+  )
 ```
 
 <picture>

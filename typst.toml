@@ -1,17 +1,17 @@
 # for a description of available keys, see https://github.com/typst/packages/?tab=readme-ov-file#package-format
 
 [package]
-name = ""
+name = "sociedade_estado"
 version = "0.1.0"
 entrypoint = "src/lib.typ"
-authors = []
-license = "Unlicense"
-description = ""
+authors = ["Frederico Guth", "Eduardo Dimitrov"]
+license = "Creative Commons Attribution-ShareAlike 4.0 International"
+description = "Estilo para artigos na revista Sociedade & Estado"
 homepage = ""
-repository = ""
-keywords = []
-categories = []
-disciplines = []
+repository = "https://github.com/fredguth/sociedade_estado_typst"
+keywords = ["paper", "article", "journal"]
+categories = ["paper"]
+disciplines = ["sociology", "political science"]
 # compiler = ""
 exclude = [
   ".github",
@@ -25,8 +25,8 @@ exclude = [
 ]
 
 # [template]
-# path = "template"
-# entrypoint = "main.typ"
+path = "template"
+entrypoint = "main.typ"
 # thumbnail = "thumbnail.png"
 
 # [tool.mytool]
