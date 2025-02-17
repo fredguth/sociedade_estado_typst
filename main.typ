@@ -1,7 +1,8 @@
-#import "@preview/sociedade_estado_typst:0.1.0"
+// #import "@preview/sociedade_estado_typst:0.1.0"
+#import "/src/lib.typ": template, make-venue
 
 
-#show: sociedade_estado.template.with(
+#show: template.with(
   title: [Towards Swifter Interstellar Mail Delivery],
   authors: (
     (
@@ -67,24 +68,3 @@ Our concept suggests three ways that A-Mail can be best utilized.
 - Lastly, A-Mail is capable of performing high-level complex calculations. It is this capability that distinguishes A-Mail from traditional space mailers. This is an especially useful capability when planning long-distance space missions.
 
 The delivery speed of an A-Mail can be determined through this simple formula:
-
-$ v(t) = lim_(t -> infinity) integral^infinity c dot sqrt(t^2)  physica.dd("t") $
-
-Building on the strong foundations of A-Mail, we extend our platform to predict problems and apply existing and new best practices to ensure the mail is delivered without any issues. We call this extension AI-Mail. AI-Mail is a new concept designed and delivered by artificially intelligent (AI) agents. The AI-Mail agents are intelligently designed to solve problems at various points in the delivery chain. These problems are related to targeting, delivery delay, tone of delivery, product information, product return, system crash, shipment error and more. AI-Mail provides a one-stop solution for A-Mail's shortcomings.
-
-== Proven technology
-A-Mail has been under development four the past ten years and in the process has consolidate different space programmes. Over the course of the last year, our space P.I.s have already found over ten thousand lost letters. These letters had been drifting in space since the stone ages when they were originally mailed. Only now we had the technology to recover them. In this way, A-Mail technology has already proven invaluable to human advancement and research, bringing us closer to our ancestors.
-
-== Limitless possibilities
-Through A-Mail's _faster-than-light_ technology, for the first time, humans have the capability to rearch far away solar systems to find out whether we are, after all, alone in this universe.
-During our research, we have already established pen pal relations with at least three potential extraterrestrial living forms.
-
-== Direct implications
-One of the most direct implications of A-Mail is the solution of the Mars problem. This means that people stuck on Mars can now finally watch football games live, a significant achievement on the grand scale of things. The complex communication interactions arising between Earth, Mars, and the \+
-
-#figure(
-  image("a-mail.png"),
-  caption: [
-    Visualization of the FTL Earth-to-Mars communication capabilities enabled by A-Mail.
-  ],
-)
